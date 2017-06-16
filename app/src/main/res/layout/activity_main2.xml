@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="klosinski.kamil.deoval.Main2Activity">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="266dp"
+        android:layout_height="21dp"
+        android:text="Welcome, "
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="266dp"
+        android:layout_height="21dp"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="266dp"
+        android:layout_height="21dp"
+        android:text="Job list for this week"
+        android:textSize="18sp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TableLayout
+        android:layout_width="353dp"
+        android:layout_height="348dp"
+        android:layout_marginBottom="2dp"
+        android:stretchColumns="0,1,2"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+        <TableRow>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="Reg" />
+
+        <TextView
+
+            android:padding="3dip"
+            android:text="Type" />
+
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#000000" />
+
+
+        <TableRow android:background="#FF909090" >
+
+            <TextView
+                android:padding="3dip"
+                android:gravity="left"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="06 D 2192"
+                android:onClick="job1"/>
+
+
+            <TextView
+
+                android:padding="3dip"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Van" />
+
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#000000" />
+
+        <TableRow android:background="#FF909090">
+
+            <TextView
+                android:padding="3dip"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="151 CW 1431" />
+
+            <TextView
+                android:padding="3dip"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Bus" />
+
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#000000" /><TableRow android:background="#FF909090">
+
+        <TextView
+            android:padding="3dip"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="171 D 23412" />
+
+        <TextView
+            android:padding="3dip"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Bus" />
+
+    </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#000000" />
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
