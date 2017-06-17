@@ -33,7 +33,7 @@ public class Main4Activity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager){
         SectionsPageAdapter adapter = new SectionsPageAdapter(getSupportFragmentManager());
-        adapter.addFragment(new Tab1Fragment(), "Current Job");
+        adapter.addFragment(new Tab1Fragment(), "Curren Job");
         adapter.addFragment(new Tab2Fragment(), "Vehicle History");
         adapter.addFragment(new Tab3Fragment(), "Vehicle Details");
         viewPager.setAdapter(adapter);
